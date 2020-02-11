@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Week 1 Day 1</title>
+  <link rel="stylesheet" href="1.1.css"/>
+</head>
+<body>
+  
+<!-- 
+  Welcome
+  Intros (Who, why, prior coding exp, intersting question)
+  Make sure they are using Chrome!! 
+  Slack out calendar
+-->
+
+<!-- Assignments -->
+<!-- 
+     Smiley Modules, CSS Creature, Week 1 Videos
+ -->
+
+ <!-- Send Out Flashcards -->
+
+
+                        <!-- ***** LESSON ***** -->
+
+<!-- 
+  Using the terminal create a new folder called challenges and inside of that a folder called Week1 and
+  inside that a folder called Day1
+     Folder Structure:
+        javascriptFeb2020 (or whatever)
+          javascriptLibrary
+            0-prework
+              00-setup.html (from orientation)
+            challenges
+              week1
+                day1
+
+  Go into VS Code and make a new file called 1.1.html and 1.1.css
+-->
+<!-- Link CSS to HTML -->
+
+<!-- 
+      Challenge 1
+      Two Truths and a Lie
+      
+      Bronze: 
+      Make an h1 tag saying 'Two Truths and a Lie'
+      Make 3 h3 tags, each saying a short blurb about that option (example: 'Been to Russia')
+      Make 3 p tags (one for each h3 tag), giving a short sentence elaborating that truth/lie
+      Wrap it all in a div tag
+
+      Silver: 
+      Using CSS: 
+      Make the h1 tag LIGHT GREEN and CENTERED
+      Make each h3 tag BLUE
+      Make each p tag RED
+      Wrap it all in a BORDER that is THICK and BLACK
+
+      Gold:
+      Curve the corners of that BORDER
+      Give it a BACKGROUND COLOR of GREY
+      Wrap each Truth/Lie in separate divs, give them each a BORDER, curve the BORDER, and make each BACKGROUND COLOR LIGHT GREY
+      CENTER everyting in each div
+      Line each Truth/Lie side-by-side 
+     -->
+
+    <!-- ! + tab or enter. If options do not show up, Emmet Abreviations need to be turned on -->
+    <!-- Show off some other emmet abbreviations 
+              div>h1+(h3>p)*3  -->
+
+     <style>
+
+      h1 {
+        color: lightgreen;
+        text-align: center;
+      }
+
+      h3 {
+        color: blue;
+        font-weight: 1;
+      }
+
+      p {
+        color: red;
+      }
+
+      #truthLie {
+        border: 3px solid black;
+        border-radius: 1em;
+        background-color: grey;
+
+        padding: 0.25em; 
+        text-align: center;
+      }
+
+      .option {
+        border: 1px solid black;
+        border-radius: 1em;
+        background-color: lightgrey;
+        text-align: center;
+        width: 33%;
+        display: inline-block;
+      }
+
+    </style>
+
+    <div id="truthLie">
+      <h1>Two Truths and a Lie</h1>
+      <div class="option">
+         <h3>I hate the Bahamas</h3>
+         <p>I hate the Bahamas and I am never returning. </p>
+      </div>
+      <div class="option">
+        <h3>Been to Cyprus</h3>
+        <p>I have been to Cyprus.</p>
+      </div>
+      <div class="option">
+        <h3>Languages</h3>
+        <p>I can speak 5-ish languages.</p>
+      </div>
+    </div>
+
+      <!-- Challenge 2
+      Movie Rating
+      
+      Bronze: 
+      Make an h2 tag saying 'Movies!'
+      Make a TABLE with a HEADER 
+      In the header, have 4 COLUMNS with the headers reading: 'Movie Title', 'Year', 'Runtime', and 'Rating'
+      Add at least 3 movies (you can make the info up)
+
+      Silver: 
+      Using CSS: 
+      Add a BACKGROUND COLOR of LIGHT SKY BLUE
+      Put a BORDER around the table that is BLACK
+
+      Gold:
+      ITALICIZE the movie titles
+      Set the table in the CENTER  -->
+      
+      <style>
+        
+        table, th, td {
+          border: 1px solid black;
+        padding: 0.5em;
+        background-color: lightskyblue;
+      }
+
+      th, td {
+        padding: 0.5em;
+      }
+      
+      table {
+        margin: auto;
+      }
+
+      #movies {
+        text-align: center;
+      }
+
+      .title {
+        font-style: italic;
+      }
+      
+    </style>
+    
+    <div id="movies">
+      <h2>MOVIES!</h2>
+      <table>
+        <tr>
+          <th>Movie Title</th>
+          <th>Year</th>
+          <th>Runtime</th>
+          <th>Rating</th>
+        </tr>
+        <tr>
+          <td class="title">Clue</td>
+          <td>1985</td>
+          <td>97 minutes</td>
+          <td>PG</td>
+        </tr>
+        <tr>
+          <td class="title">Harry Potter and the Sorcerer's Stone </td>
+          <td>1997</td>
+          <td>159 minutes</td>
+          <td>PG</td>
+        </tr>
+        <tr>
+          <td class="title">Black Panther</td>
+          <td>2018</td>
+          <td>136 minutes</td>
+          <td>PG-13</td>
+        </tr>
+      </table>
+    </div>  
+
+    <!-- 
+      ***** End of Class *****
+    Assignments due
+    Take Notes on videos
+    Lightning round if there is time or begin Smiley Modules
+     -->
+
+</body>
+</html>
