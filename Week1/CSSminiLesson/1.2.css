@@ -5,10 +5,10 @@ selector {
 } 
 */
 
-
-*{
+/* SELECTS ALL ELEMENTS */
+/* *{
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 h1{
   color: blue;
@@ -19,6 +19,7 @@ h3 {
 
 }
 
+/* SHOW INSPECT IN BROWSER AS THINGS ARE OVERRIDDEN */
 .purple{
   color: purple;
 }
@@ -27,6 +28,7 @@ h3 {
   color: red;
 }
 
+/* SHOW INSPECT PADDING, BORDER, MARGIN */
 .box{ 
   height: 100px; 
   width: 100px;

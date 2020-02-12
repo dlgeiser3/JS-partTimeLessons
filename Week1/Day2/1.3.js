@@ -61,4 +61,5 @@ if (typeof value === 'string'){
 //   : 'what are you?!')
 
 
-
+//GIT LESSON IF TIME TODAY
+//If not due the git lesson tomorrow
