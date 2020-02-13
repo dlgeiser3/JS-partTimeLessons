@@ -31,25 +31,25 @@ let FB = 30;
 
 switch (true) {
   case (FB % 3 === 0 && FB % 5 === 0):
-  console.log('Fizz Buzz');
-  break;
+    console.log('Fizz Buzz');
+    break;
   case (FB % 5 === 0):
-  console.log('Buzz');
-  break;
+    console.log('Buzz');
+    break;
   case (FB % 3 === 0):
-  console.log('Fizz');
-  break;  
+    console.log('Fizz');
+    break;
 }
 
 let FB = 30;
 
 
 
-(FB % 3 === 0 && FB % 5 === 0) 
-? console.log('Fizz Buzz') 
-: (FB % 5 === 0) ? console.log('Buzz') 
-: (FB % 3 === 0) ? console.log('Fizz') 
-: console.log(FB);
+(FB % 3 === 0 && FB % 5 === 0)
+  ? console.log('Fizz Buzz')
+  : (FB % 5 === 0) ? console.log('Buzz')
+    : (FB % 3 === 0) ? console.log('Fizz')
+      : console.log(FB);
 
 
 
@@ -59,9 +59,9 @@ SCOPE CHALLENGE
 // CHALLENGE SCOPE 1
 // Can you determine what will be console logged?
 var x = "Cory";
-function scope(){
+function scope() {
   var x = "world";
-  if (true){
+  if (true) {
     var x = "Hello";
     console.log(x)
   }
@@ -72,12 +72,12 @@ console.log(x)
 // ANSWER---> "Hello" , "Hello", "Cory"
 // CHALLENGE SCOPE 2
 //What can you do to change the output to be "Hello" "world" "Cory"
-  //explain why?
-      
+//explain why?
+
 var x = "Cory";
-function scope(){
+function scope() {
   var x = "world";
-  if (true){
+  if (true) {
     let x = "Hello"; //<------ ANSWER change var to let
     console.log(x)
   }
@@ -89,3 +89,35 @@ console.log(x)
 // CHALLENGE HOIST
 //Can you determine the order of hoisting?
 //Still in progress
+
+
+
+
+/**************************
+HOISTING CHALLENGE
+**************************/
+// 6. What will console.log?
+helloWorld();
+var x = "Cory";
+function helloWorld() {
+  console.log("Hello World", x)
+}
+// --> Hello World undefined
+// explain --> 
+// First Pass - function declaration is hoisted, then our var x is hoisted, but without value
+//Second Pass - function is called, but because our function is called before the variable x is assigned a value we get undefined.
+// 7. Can you rearrange the code to get the output "Hello World Cory"
+helloWorld();
+var x = "Cory";
+function helloWorld() {
+  console.log("Hello World", x)
+}
+// -->
+  // var x = "Cory";
+  // helloWorld();
+  // function helloWorld(){
+  //   console.log("Hello World", x)
+  // }
+    // explain --> 
+      // First Pass - function declaration is hoisted, then our var x is hoisted, but without value
+      //Second Pass - this time var x is assigned a value, then we call our function declaration

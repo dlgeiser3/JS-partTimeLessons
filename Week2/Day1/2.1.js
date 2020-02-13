@@ -17,6 +17,19 @@ if (a % b === 0) {
 }
 
 
+switch (true) {
+  case (a % b === 0):
+    console.log(`${a} is divisible by ${b}`)
+    break;
+  default:
+    console.log(`${a} divided by ${b} leaves a remainder of ${a % b}`)
+}
+
+
+(a % b === 0)
+  ? console.log(`${a} is divisible by ${b}`)
+  : console.log(`${a} divided by ${b} leaves a remainder of ${a % b}`)
+
 //Checking a string
 //Write a conditional that checks if a string is empty
 //If it is console log 'Please type something'
@@ -34,3 +47,22 @@ if (string === "") {
 } else {
   console.log(string)
 }
+
+switch (true) {
+  case (string === ""):
+    console.log('Please type something')
+    break;
+  case (string.length > 10):
+    console.log('Please type less')
+    break;
+  default:
+    console.log(string)
+  }
+
+  (!string) 
+  ? console.log('Please type something')
+  : (string.length > 10) ? (console.log('Please type less'))
+  : console.log(string) 
+
+
+
