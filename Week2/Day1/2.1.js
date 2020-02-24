@@ -1,6 +1,6 @@
 //Warm up white boarding challenges
 
-// Is a divisible by b?
+
 // Set up two varibles equal to any two integers
 // Write a conditional that checks if the first varible is divisible by the second
 // If it is console log "value of a is divisble by value of b"
@@ -30,6 +30,8 @@ switch (true) {
   ? console.log(`${a} is divisible by ${b}`)
   : console.log(`${a} divided by ${b} leaves a remainder of ${a % b}`)
 
+
+
 //Checking a string
 //Write a conditional that checks if a string is empty
 //If it is console log 'Please type something'
@@ -57,12 +59,12 @@ switch (true) {
     break;
   default:
     console.log(string)
-  }
+}
 
-  (!string) 
+(!string)
   ? console.log('Please type something')
   : (string.length > 10) ? (console.log('Please type less'))
-  : console.log(string) 
+    : console.log(string)
 
 
 
