@@ -3,12 +3,12 @@
 
 // Set up two varibles equal to any two integers
 // Write a conditional that checks if the first varible is divisible by the second
-// If it is console log "value of a is divisble by value of b"
+// If it is console log `value of ${a} is divisble by value of ${b}`
 // If it is not console log the remainder
 
 
-let a = 10;
-let b = 3;
+let a = 142;
+let b = 17;
 
 if (a % b === 0) {
   console.log(`${a} is divisible by ${b}`)
@@ -33,10 +33,15 @@ switch (true) {
 
 
 //Checking a string
+
+// STEP 1
 //Write a conditional that checks if a string is empty
 //If it is console log 'Please type something'
+
+// STEP 2
 //If it is not console log the string
 
+// STEP 3
 //add to your conditional to check if the string has more than 10 characters
 //if it does console log please type less
 
@@ -66,5 +71,5 @@ switch (true) {
   : (string.length > 10) ? (console.log('Please type less'))
     : console.log(string)
 
-
+console.log(!string)
 
