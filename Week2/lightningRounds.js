@@ -179,16 +179,19 @@ favMovie('Spirited Away')
 
 
 // QUESTION
-// Using the following array, write a for loop that logs each item in the array.
+// Using the following array, write a for loop that console logs each item in the array.
 let characters = ['Link', 'Zelda', 'Gannon', 'Navi']
 
-
-
+for (potato of characters) {
+  console.log('Hi')
+}
+console.log(characters[1])
+characters.forEach(char => console.log(char))
 
 
 
 // ANSWER
-let characters = ['Mario', 'Luigi', 'Peach', 'Bowser']
+let characters = ['Link', 'Zelda', 'Gannon', 'Navi']
 
 for (char of characters) {
   console.log(char)
@@ -198,6 +201,7 @@ for (char of characters) {
 
 // QUESTION
 //Use a for in loop to console.log each of the keys in the following object
+
 
 let character = { 
   name:"Link", 
