@@ -1,16 +1,8 @@
 // COUNTING SUM CHALLENGE
 
 // Write a function that adds together all the numbers between any two numbers.
-// console.log the sum of those numbers. 
-
-//Starter hint:
-
-function countingSum(start, stop){
-  
-  // what logic will you need here?
-  // How will you use the parameters?
-
-}
+// Your function will accept two parameters. One for the starting number and another for the ending number.
+// console.log the final sum of the numbers. 
 
 //Results for testing
 countingSum(1, 100) // = 5050
@@ -18,11 +10,10 @@ countingSum(35, 77) // = 2408
 countingSum(234, 567) // = 133767
 
 
-
-
-function countingSum(start, stop){
+// Solution
+function countingSum(start, stop) {
   let sum = start;
-  for (i = start + 1; i <= stop; i++){
+  for (i = start + 1; i <= stop; i++) {
     sum += i
     // console.log(sum)
   }
