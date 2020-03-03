@@ -1,0 +1,17 @@
+.jumbotron {
+  background: url(../assets/treats.jpeg) no-repeat center;
+  height: 22rem;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+#name{
+  font-weight: 500;
+  font-size: 5em;
+}
+
+#nameAbout{
+  font-weight: 400;
+  font-size: 2em;
+}
