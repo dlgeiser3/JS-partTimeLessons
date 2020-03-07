@@ -1,0 +1,14 @@
+Using the API documentation see how you can fetch from the Adventure Time Quote API. 
+You will need to used DOM manipulation to display the random quote and character photo. 
+Each time you refresh the page a new quote should be displayed.
+
+Documentation URL: https://adventure-time-quote-api.glitch.me
+
+Suggested Work Flow
+1. See what URL you need to use to get a random quote to display.
+2. Get the results to console.log
+3. Find out how you you will use these results to display the quote to the page.
+4. What part of the document will you need to select? How can you insert the quote to this     portion of the document?
+5. Once you get the quote to display add in the pictures depending on which character is saying the quote. 
+
+
