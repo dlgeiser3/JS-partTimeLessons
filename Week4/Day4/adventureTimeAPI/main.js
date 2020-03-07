@@ -1,6 +1,3 @@
-// Test URL
-// https://adventure-time-quote-api.glitch.me/api/quotes
-
 let url = `https://adventure-time-quote-api.glitch.me/api/random`;
 
 const section = document.querySelector('div');
@@ -21,7 +18,6 @@ const charPic = {
 
   fetch(url)
     .then(function(result) {
-      // console.log(result)
       return result.json()
     })
     .then(function(json) {
@@ -30,9 +26,6 @@ const charPic = {
     })
 
 function displayResults(json){
-  // while (section.firstChild) {
-    // section.removeChild(section.firstChild);
-  // }
   let quote = json
   console.log(`QUOTE RESULT ==> ${quote}`)
 
@@ -45,6 +38,7 @@ function displayResults(json){
   heading.textContent = quote.split(":")[1]
   
   let character = quote.split(":")[0]
+  // console.log(character)
 
   if (character === "Finn"){
     img.src = charPic.finn
@@ -71,7 +65,6 @@ function displayResults(json){
   } else if (character === "Jake the Dog"){
     img.src = charPic.jake
   }
-  
 }
 
 
