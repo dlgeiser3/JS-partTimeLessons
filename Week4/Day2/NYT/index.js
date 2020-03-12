@@ -75,7 +75,7 @@ function displayResults(json) {
       link.textContent = current.headline.main;
 
       para.textContent = 'Keywords: ';
-      // Group 3
+
       for (let j = 0; j < current.keywords.length; j++) {
         let span = document.createElement('span');
         span.textContent += current.keywords[j].value + ' ';
